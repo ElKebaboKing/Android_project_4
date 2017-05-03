@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,10 +10,44 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Hello World!"/>
+    
+    <View
+        android:id="@+id/bottom_part"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"/>
+    <TextView
+        android:text="Library"
+        android:layout_alignParentRight="true"
+        style="@style/OptionButton" />
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/browse_option"
+        android:text="Browse"
+        android:layout_centerHorizontal="true"
+        style="@style/OptionButton" />
+
+    <TextView
+        android:text="Search"
+        android:layout_alignParentLeft="true"
+        style="@style/OptionButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_part"
+        android:text="@string/now_playing"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:layout_margin="8dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_part">
+
+    </RelativeLayout>
+
+</RelativeLayout>
