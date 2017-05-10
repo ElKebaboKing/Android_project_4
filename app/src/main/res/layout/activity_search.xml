@@ -6,4 +6,11 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.musicapp.SearchActivity">
 
+    <EditText
+        android:id="@+id/search_hint"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/search_hint"/>
+
+
 </RelativeLayout>
