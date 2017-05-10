@@ -6,20 +6,31 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.musicapp.SearchActivity">
 
-    <EditText
-        android:id="@+id/search_hint"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:hint="@string/search_hint"/>
+    <!-- include header and now playing -->
+    <include android:id="@+id/header" layout="@layout/header"/>
+    <include android:id="@+id/now_playing" layout="@layout/now_playing"/>
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/search_hint">
-        <TextView
+        android:layout_below="@id/header"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/search_hint"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="List the search result here."/>
-    </ScrollView>
+            android:layout_height="48dp"
+            android:hint="@string/search_hint"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="List the search result here."/>
+        </ScrollView>
+
+    </LinearLayout>
 
 </RelativeLayout>
