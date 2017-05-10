@@ -15,4 +15,5 @@
     <string name="library">Library</string>
     <string name="library_label">Library</string>
     <string name="library_playlists">Playlists</string>
+    <string name="library_songs">All songs</string>
 </resources>

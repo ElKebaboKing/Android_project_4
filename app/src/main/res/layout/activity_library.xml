@@ -10,6 +10,8 @@
     <TextView
         style="@style/LibraryEntry"
         android:text="@string/library_playlists"/>
-
+    <TextView
+        style="@style/LibraryEntry"
+        android:text="@string/library_songs"/>
 
 </LinearLayout>
