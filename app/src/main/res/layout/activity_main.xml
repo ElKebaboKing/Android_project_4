@@ -14,6 +14,7 @@
         android:layout_alignParentBottom="true"
         android:background="@color/colorPrimary"/>
     <TextView
+        android:id="@+id/library"
         android:text="@string/library"
         android:layout_alignParentRight="true"
         style="@style/OptionButton" />
@@ -25,6 +26,7 @@
         style="@style/OptionButton" />
 
     <TextView
+        android:id="@+id/search"
         android:text="@string/search"
         android:layout_alignParentLeft="true"
         style="@style/OptionButton" />
