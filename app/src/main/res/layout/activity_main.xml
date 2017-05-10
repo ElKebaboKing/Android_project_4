@@ -7,29 +7,9 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.musicapp.MainActivity">
     
-    <View
-        android:id="@+id/bottom_part"
-        android:layout_width="match_parent"
-        android:layout_height="72dp"
-        android:layout_alignParentTop="true"
-        android:background="@color/colorPrimary"/>
-    <TextView
-        android:id="@+id/library_option"
-        android:text="@string/library"
-        android:layout_alignParentRight="true"
-        style="@style/OptionButton" />
-
-    <TextView
-        android:id="@+id/browse_option"
-        android:text="@string/browse"
-        android:layout_centerHorizontal="true"
-        style="@style/OptionButton" />
-
-    <TextView
-        android:id="@+id/search_option"
-        android:text="@string/search"
-        android:layout_alignParentLeft="true"
-        style="@style/OptionButton" />
+    <include
+        android:id="@+id/header"
+        layout="@layout/header"/>
 
     <TextView
         android:layout_width="wrap_content"
