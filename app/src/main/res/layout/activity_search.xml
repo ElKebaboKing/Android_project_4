@@ -12,5 +12,11 @@
         android:layout_height="48dp"
         android:hint="@string/search_hint"/>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_hint">
+        
+    </ScrollView>
 
 </RelativeLayout>
