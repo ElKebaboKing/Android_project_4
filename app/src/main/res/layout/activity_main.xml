@@ -11,7 +11,7 @@
         android:id="@+id/bottom_part"
         android:layout_width="match_parent"
         android:layout_height="72dp"
-        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
         android:background="@color/colorPrimary"/>
     <TextView
         android:id="@+id/library_option"
@@ -34,11 +34,12 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
 
         android:text="@string/now_playing"
-        android:layout_centerHorizontal="true"
-        android:textSize="24sp"
-        android:layout_margin="8dp"/>
+        android:textSize="@dimen/entryTextSize"
+        android:layout_margin="@dimen/entryMargin"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
