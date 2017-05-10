@@ -3,6 +3,8 @@
     <string name="now_playing">Now playing: Song name</string>
 
     <string name="search_label">Search</string>
+    <string name="browse_label">Browse</string>
+    <string name="library_label">Library</string>
 
     <string name="search">Search</string>
     <string name="browse">Browse</string>
