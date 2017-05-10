@@ -22,34 +22,19 @@
         <!-- Search activity -->
         <activity
             android:name=".SearchActivity"
-            android:label="@string/search_label"
-            android:parentActivityName=".MainActivity">
-            <!-- Parent activity meta-data to support 4.0 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"/>
+            android:label="@string/search_label">
         </activity>
 
         <!-- Browse activity -->
         <activity
             android:name=".BrowseActivity"
-            android:label="@string/browse_label"
-            android:parentActivityName=".MainActivity">
-            <!-- Parent activity meta-data to support 4.0 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"/>
+            android:label="@string/browse_label">
         </activity>
 
         <!-- Library activity -->
         <activity
             android:name=".LibraryActivity"
-            android:label="@string/library_label"
-            android:parentActivityName=".MainActivity">
-            <!-- Parent activity meta-data to support 4.0 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"/>
+            android:label="@string/library_label">>
         </activity>
     </application>
 
