@@ -12,11 +12,6 @@
     <include android:id="@+id/now_playing" layout="@layout/now_playing"/>
 
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/header_background">
 
-    </RelativeLayout>
 
 </RelativeLayout>
