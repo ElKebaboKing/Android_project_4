@@ -14,18 +14,18 @@
         android:layout_alignParentBottom="true"
         android:background="@color/colorPrimary"/>
     <TextView
-        android:text="Library"
+        android:text="@string/library"
         android:layout_alignParentRight="true"
         style="@style/OptionButton" />
 
     <TextView
         android:id="@+id/browse_option"
-        android:text="Browse"
+        android:text="@string/browse"
         android:layout_centerHorizontal="true"
         style="@style/OptionButton" />
 
     <TextView
-        android:text="Search"
+        android:text="@string/search"
         android:layout_alignParentLeft="true"
         style="@style/OptionButton" />
 
