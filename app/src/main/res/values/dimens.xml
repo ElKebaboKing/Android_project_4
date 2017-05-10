@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="entryHeight">48dp</dimen>
+    <dimen name="entryTextSize">24sp</dimen>
+    <dimen name="entryMargin">8dp</dimen>
+    <dimen name="entryPaddingTop">8dp</dimen>
+</resources>

@@ -17,4 +17,12 @@
         <item name="android:textColor">#FFFFFF</item>
         <item name="android:layout_margin">8dp</item>
     </style>
+
+    <style name="LibraryEntry">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/entryHeight</item>
+        <item name="android:textSize">@dimen/entryTextSize</item>
+        <item name="android:layout_margin">@dimen/entryMargin</item>
+        <item name="android:paddingTop">@dimen/entryPaddingTop</item>
+    </style>
 </resources>
