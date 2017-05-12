@@ -21,19 +21,19 @@ public class SearchActivity extends AppCompatActivity{
 
         // Find the Views that show the different pages
         TextView nowPlaying = (TextView) findViewById(R.id.now_playing);
-        TextView browse = (TextView) findViewById(R.id.browse_option);
+        TextView queue = (TextView) findViewById(R.id.queue_option);
         TextView library = (TextView) findViewById(R.id.library_option);
         final EditText search_box = (EditText)findViewById(R.id.search_box);
 
-        // Set a click listener for the browse View
-        browse.setOnClickListener(new View.OnClickListener() {
+        // Set a click listener for the queue View
+        queue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Create a new intent to open Browse Activity
-                Intent browseIntent = new Intent(SearchActivity.this, BrowseActivity.class);
+                // Create a new intent to open QueueActivity
+                Intent queueIntent = new Intent(SearchActivity.this, QueueActivity.class);
 
                 // Start the new activity
-                startActivity(browseIntent);
+                startActivity(queueIntent);
             }
         });
 

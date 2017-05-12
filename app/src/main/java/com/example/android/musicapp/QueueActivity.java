@@ -10,11 +10,11 @@ import android.widget.TextView;
  * Created by es013620 on 2017-05-10.
  */
 
-public class BrowseActivity extends AppCompatActivity{
+public class QueueActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_browse);
+        setContentView(R.layout.activity_queue);
 
         // Find the Views that show the different pages
         TextView search = (TextView) findViewById(R.id.search_option);
@@ -26,7 +26,7 @@ public class BrowseActivity extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 // Create a new intent to open SearchActivity
-                Intent searchIntent = new Intent(BrowseActivity.this, SearchActivity.class);
+                Intent searchIntent = new Intent(QueueActivity.this, SearchActivity.class);
 
                 // Start the new activity
                 startActivity(searchIntent);
@@ -38,7 +38,7 @@ public class BrowseActivity extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 // Create a new intent to open LibraryActivity
-                Intent libraryIntent = new Intent(BrowseActivity.this, LibraryActivity.class);
+                Intent libraryIntent = new Intent(QueueActivity.this, LibraryActivity.class);
 
                 // Start the new activity
                 startActivity(libraryIntent);
@@ -50,7 +50,7 @@ public class BrowseActivity extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 // Create a new intent to open MainActivity
-                Intent nowPlayingIntent = new Intent(BrowseActivity.this, MainActivity.class);
+                Intent nowPlayingIntent = new Intent(QueueActivity.this, MainActivity.class);
 
                 // Start the new activity
                 startActivity(nowPlayingIntent);

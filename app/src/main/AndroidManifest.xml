@@ -27,8 +27,8 @@
 
         <!-- Browse activity -->
         <activity
-            android:name=".BrowseActivity"
-            android:label="@string/browse_label">
+            android:name=".QueueActivity"
+            android:label="@string/queue_label">
         </activity>
 
         <!-- Library activity -->

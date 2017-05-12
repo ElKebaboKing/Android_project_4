@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Find the Views that show the different pages
         TextView search = (TextView) findViewById(R.id.search_option);
-        TextView browse = (TextView) findViewById(R.id.browse_option);
+        TextView queue = (TextView) findViewById(R.id.queue_option);
         TextView library = (TextView) findViewById(R.id.library_option);
         Button previous = (Button) findViewById(R.id.previous);
         Button play_pause = (Button) findViewById(R.id.play_pause);
@@ -35,15 +35,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Set a click listener for the browse View
-        browse.setOnClickListener(new View.OnClickListener() {
+        // Set a click listener for the queue View
+        queue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Create a new intent to open BrowseActivity
-                Intent browseIntent = new Intent(MainActivity.this, BrowseActivity.class);
+                // Create a new intent to open QueueActivity
+                Intent queueIntent = new Intent(MainActivity.this, QueueActivity.class);
 
                 // Start the new activity
-                startActivity(browseIntent);
+                startActivity(queueIntent);
             }
         });
 

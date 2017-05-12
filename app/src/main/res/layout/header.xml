@@ -18,8 +18,8 @@
         style="@style/OptionButton" />
 
     <TextView
-        android:id="@+id/browse_option"
-        android:text="@string/browse"
+        android:id="@+id/queue_option"
+        android:text="@string/queue"
         android:layout_centerHorizontal="true"
         style="@style/OptionButton" />
 

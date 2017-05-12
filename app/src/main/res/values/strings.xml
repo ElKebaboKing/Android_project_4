@@ -13,8 +13,8 @@
     <string name="search_hint">Name of song, album or playlist</string>
 
     <!-- Browse activity strings -->
-    <string name="browse_label">Browse</string>
-    <string name="browse">Browse</string>
+    <string name="queue_label">Queue</string>
+    <string name="queue">Queue</string>
 
     <!-- Library activity strings -->
     <string name="library">Library</string>

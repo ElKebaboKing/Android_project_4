@@ -7,8 +7,6 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.w3c.dom.Text;
-
 /**
  * Created by es013620 on 2017-05-10.
  */
@@ -21,7 +19,7 @@ public class LibraryActivity extends AppCompatActivity{
 
         // Find the Views that show the different pages
         TextView search = (TextView) findViewById(R.id.search_option);
-        TextView browse = (TextView) findViewById(R.id.browse_option);
+        TextView queue = (TextView) findViewById(R.id.queue_option);
         TextView nowPlaying = (TextView) findViewById(R.id.now_playing);
         TextView playlists = (TextView) findViewById(R.id.playlists);
         TextView all_songs = (TextView) findViewById(R.id.all_songs);
@@ -38,15 +36,15 @@ public class LibraryActivity extends AppCompatActivity{
             }
         });
 
-        // Set a click listener for the browse View
-        browse.setOnClickListener(new View.OnClickListener() {
+        // Set a click listener for the queue View
+        queue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Create a new intent to open BrowseActivity
-                Intent browseIntent = new Intent(LibraryActivity.this, BrowseActivity.class);
+                // Create a new intent to open QueueActivity
+                Intent queueIntent = new Intent(LibraryActivity.this, QueueActivity.class);
 
                 // Start the new activity
-                startActivity(browseIntent);
+                startActivity(queueIntent);
             }
         });
         // Set a click listener for the Now Playing View
