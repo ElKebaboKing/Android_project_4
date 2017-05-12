@@ -5,6 +5,9 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import org.w3c.dom.Text;
 
 /**
  * Created by es013620 on 2017-05-10.
@@ -20,6 +23,8 @@ public class LibraryActivity extends AppCompatActivity{
         TextView search = (TextView) findViewById(R.id.search_option);
         TextView browse = (TextView) findViewById(R.id.browse_option);
         TextView nowPlaying = (TextView) findViewById(R.id.now_playing);
+        TextView playlists = (TextView) findViewById(R.id.playlists);
+        TextView all_songs = (TextView) findViewById(R.id.all_songs);
 
         // Set a click listener for the search View
         search.setOnClickListener(new View.OnClickListener() {
@@ -53,6 +58,22 @@ public class LibraryActivity extends AppCompatActivity{
 
                 // Start the new activity
                 startActivity(nowPlayingIntent);
+            }
+        });
+
+        // Set a click listener for the playlists option
+        playlists.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),"Display playlists",Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        // Set a click listener for the all songs option
+        all_songs.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),"Display all songs",Toast.LENGTH_SHORT).show();
             }
         });
     }

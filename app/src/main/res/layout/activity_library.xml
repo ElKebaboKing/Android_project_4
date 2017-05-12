@@ -18,9 +18,11 @@
         android:layout_below="@id/header"
         android:layout_above="@id/footer">
         <TextView
+            android:id="@+id/playlists"
             style="@style/LibraryEntry"
             android:text="@string/library_playlists"/>
         <TextView
+            android:id="@+id/all_songs"
             style="@style/LibraryEntry"
             android:text="@string/library_songs"/>
 
