@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         browse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Create a new intent to open SearchActivity
+                // Create a new intent to open BrowseActivity
                 Intent browseIntent = new Intent(MainActivity.this, BrowseActivity.class);
 
                 // Start the new activity

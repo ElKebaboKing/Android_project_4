@@ -37,7 +37,7 @@ public class BrowseActivity extends AppCompatActivity{
         library.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Create a new intent to open SearchActivity
+                // Create a new intent to open LibraryActivity
                 Intent libraryIntent = new Intent(BrowseActivity.this, LibraryActivity.class);
 
                 // Start the new activity
@@ -49,7 +49,7 @@ public class BrowseActivity extends AppCompatActivity{
         nowPlaying.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Create a new intent to open SearchActivity
+                // Create a new intent to open MainActivity
                 Intent nowPlayingIntent = new Intent(BrowseActivity.this, MainActivity.class);
 
                 // Start the new activity
