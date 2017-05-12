@@ -10,4 +10,24 @@
     <include android:id="@+id/header" layout="@layout/header"/>
     <include android:id="@+id/footer" layout="@layout/now_playing"/>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:layout_above="@id/footer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="List the queue here"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
 </RelativeLayout>
