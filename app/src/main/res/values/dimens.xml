@@ -4,6 +4,6 @@
     <dimen name="entryTextSize">24sp</dimen>
     <dimen name="entryMargin">8dp</dimen>
     <dimen name="entryPaddingTop">8dp</dimen>
-    <dimen name="imageWidth">match_parent</dimen>
-    <dimen name="imageHeight">match_parent</dimen>
+    <dimen name="imageWidth">300dp</dimen>
+    <dimen name="imageHeight">200dp</dimen>
 </resources>
