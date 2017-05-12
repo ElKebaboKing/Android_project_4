@@ -16,7 +16,7 @@ public class SearchActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
         // Find the Views that show the different pages
-        TextView search = (TextView) findViewById(R.id.search_option);
+        TextView nowPlaying = (TextView) findViewById(R.id.now_playing);
         TextView browse = (TextView) findViewById(R.id.browse_option);
         TextView library = (TextView) findViewById(R.id.library_option);
 
@@ -42,6 +42,18 @@ public class SearchActivity extends AppCompatActivity{
 
                 // Start the new activity
                 startActivity(libraryIntent);
+            }
+        });
+
+        // Set a click listener for the Now Playing View
+        nowPlaying.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Create a new intent to open SearchActivity
+                Intent nowPlayingIntent = new Intent(SearchActivity.this, MainActivity.class);
+
+                // Start the new activity
+                startActivity(nowPlayingIntent);
             }
         });
     }

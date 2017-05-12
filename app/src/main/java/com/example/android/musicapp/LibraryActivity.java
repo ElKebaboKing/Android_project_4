@@ -19,7 +19,7 @@ public class LibraryActivity extends AppCompatActivity{
         // Find the Views that show the different pages
         TextView search = (TextView) findViewById(R.id.search_option);
         TextView browse = (TextView) findViewById(R.id.browse_option);
-        TextView library = (TextView) findViewById(R.id.library_option);
+        TextView nowPlaying = (TextView) findViewById(R.id.now_playing);
 
         // Set a click listener for the search View
         search.setOnClickListener(new View.OnClickListener() {
@@ -42,6 +42,17 @@ public class LibraryActivity extends AppCompatActivity{
 
                 // Start the new activity
                 startActivity(browseIntent);
+            }
+        });
+        // Set a click listener for the Now Playing View
+        nowPlaying.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Create a new intent to open SearchActivity
+                Intent nowPlayingIntent = new Intent(LibraryActivity.this, MainActivity.class);
+
+                // Start the new activity
+                startActivity(nowPlayingIntent);
             }
         });
     }

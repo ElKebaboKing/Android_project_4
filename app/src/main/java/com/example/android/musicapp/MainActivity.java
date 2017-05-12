@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         TextView search = (TextView) findViewById(R.id.search_option);
         TextView browse = (TextView) findViewById(R.id.browse_option);
         TextView library = (TextView) findViewById(R.id.library_option);
+        TextView nowPlaying = (TextView) findViewById(R.id.now_playing);
 
         // Set a click listener for the search View
         search.setOnClickListener(new View.OnClickListener() {

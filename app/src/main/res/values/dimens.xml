@@ -4,4 +4,6 @@
     <dimen name="entryTextSize">24sp</dimen>
     <dimen name="entryMargin">8dp</dimen>
     <dimen name="entryPaddingTop">8dp</dimen>
+    <dimen name="imageWidth">400dp</dimen>
+    <dimen name="imageHeight">400dp</dimen>
 </resources>
